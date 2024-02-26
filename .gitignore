@@ -1,0 +1,130 @@
+## .NET Core ##
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# VS Code directories
+.vscode/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Output of the build
+bin/
+obj/
+out/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Tooling
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Project files
+*.csproj
+*.vbproj
+*.fsproj
+*.dbproj
+
+# Exclude all bin and obj folders
+**/[Bb]in/
+**/[Oo]bj/
+**/[Ll]og/
+
+# Exclude the Packages folder, which can be large
+**/[Pp]ackages/
+
+# Exclude the node_modules folder in ASP.NET Core projects using Node.js
+**/node_modules/
+
+# User-specific content
+*.rsuser
+
+# macOS - General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+## Angular ##
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+/ng e2e
+
+# production
+/dist
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+/npm-debug.log*
+/yarn-error.log*
+/test-report.xml
+/test-results/
+
+# System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE-specific files
+.idea/
+*.swp
+*.swo
+*.sublime
+*.sublime-workspace
+*.vscode
+*.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Angular files
+/angular.json
