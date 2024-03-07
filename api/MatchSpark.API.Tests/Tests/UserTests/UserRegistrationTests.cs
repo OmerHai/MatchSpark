@@ -10,7 +10,7 @@ using System.Net;
 
 namespace MatchSpark.API.IntegrationTests.Tests.UserTests
 {
-    public class UserRegistrationTests : IClassFixture<WebApplicationFactory<Program>>
+    public class UserRegistrationTests : IClassFixture<CustomWebApplicationFactory>
     {
         private const string DEFAULT_EMAIL = "test@example.com";
         private const string DEFAULT_PASSWORD = "Test123!";
@@ -19,7 +19,7 @@ namespace MatchSpark.API.IntegrationTests.Tests.UserTests
 
         private readonly HttpClient _client;
 
-        public UserRegistrationTests(WebApplicationFactory<Program> factory)
+        public UserRegistrationTests(CustomWebApplicationFactory factory)
         {
             _client = factory.CreateClient();
         }
