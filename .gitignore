@@ -54,7 +54,6 @@ artifacts/
 *.sap
 
 # Project files
-*.csproj
 *.vbproj
 *.fsproj
 *.dbproj
