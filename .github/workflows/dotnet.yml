@@ -18,8 +18,10 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 8.0.x
-    - name: Restore NuGet packages
+    - name: Restore NuGet packages for API
       run: dotnet restore api/MatchSpark.API/MatchSpark.API.csproj
+    - name: Restore NuGet packages for API Tests
+      run: dotnet restore api/MatchSpark.API.Tests/MatchSpark.API.Tests.csproj
     - name: Build with dotnet
       run: dotnet build api/MatchSpark.API/MatchSpark.API.csproj --configuration Release
     - name: Test with dotnet
