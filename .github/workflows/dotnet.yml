@@ -19,6 +19,6 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Build with dotnet
-      run: dotnet build --configuration Release
+      run: dotnet build api/MatchSpark.API/MatchSpark.API.csproj --configuration Release
     - name: Test with dotnet
-      run: dotnet test --no-restore
+      run: dotnet test api/MatchSpark.API.Tests/MatchSpark.API.Tests.csproj --no-restore
