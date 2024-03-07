@@ -22,7 +22,11 @@ jobs:
       run: dotnet restore api/MatchSpark.API/MatchSpark.API.csproj
     - name: Restore NuGet packages for API Tests
       run: dotnet restore api/MatchSpark.API.Tests/MatchSpark.API.Tests.csproj
+    - name: Restore NuGet packages for core Tests
+      run: dotnet restore api/MatchSpark.Core.Tests/MatchSpark.Core.Tests.csproj
     - name: Build with dotnet
       run: dotnet build api/MatchSpark.API/MatchSpark.API.csproj --configuration Release
-    - name: Test with dotnet
+    - name: Test api with dotnet
       run: dotnet test api/MatchSpark.API.Tests/MatchSpark.API.Tests.csproj --no-restore
+    - name: Test core with dotnet
+      run: dotnet test api/MatchSpark.Core.Tests/MatchSpark.Core.Tests.csproj --no-restore
