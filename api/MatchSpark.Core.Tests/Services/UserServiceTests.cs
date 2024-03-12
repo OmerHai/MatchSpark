@@ -24,8 +24,8 @@ namespace MatchSpark.Core.Tests.Services
                 AppUser user = new AppUser { Email = "test@example.com" };
                
                 // Act
-                bool result = await service.RegisterUserAsync(user, "TestPassword123!");
-                Assert.True(result);
+                var result = await service.RegisterUserAsync(user, "TestPassword123!");
+                Assert.True(result.Success);
             }
         }
     }
